@@ -2,9 +2,9 @@
     <section>
     <div class="header">
     <div class="head-video">
-        <video controls autoplay loop>
-            <source src = "../../public/PDSvideo.mp4" type="video/mp4"/>
-            <a href="../../public/PDSvideo.mp4"></a>
+        <video autoplay loop>
+            <source src = "../../public/pds.mov" type="video/mp4"/>
+            <a href="../../public/pds.mov"></a>
         </video>
     </div>
     <div class="header-content">
