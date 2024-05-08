@@ -3,8 +3,8 @@
     <div class="header">
     <div class="head-video">
         <video autoplay loop>
-            <source src = "../../public/pds.mov" type="video/mov"/>
-            <a href="../../public/pds.mov"></a>
+            <!-- <source src = "../../public/pds.mov" type="video/mov"/>
+            <a href="../../public/pds.mov"></a> -->
         </video>
     </div>
     <div class="header-content">
