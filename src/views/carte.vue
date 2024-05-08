@@ -1,0 +1,135 @@
+<template>
+<div class="carte-content">
+    <div class="titre">
+        <h1>Notre Carte</h1>
+    </div>
+    <div class="carte">
+        <div class="entrees">
+            <h2 class="titre-cat">Entrées</h2>
+            <div class="carte-item">
+                <p class="nom">Tartare de gambas, mayonnaise maison à l'encre de seiche et son guacamole d'avocat</p>
+                <p class="prix">17€</p>
+            </div>
+            <p class="trait">_______________________________</p>
+            <div class="carte-item">
+                <p class="nom">Retour d'Asie, ravioles de volaille et son bouillon de poulet au gingembre et à la citronnelle</p>
+                <p class="prix">16€</p>
+            </div>
+            <p class="trait">_______________________________</p>
+            <div class="carte-item">
+                <p class="nom">Nougat de Camembert parfumé à la truffe et son velouté de petits pois à la menthe</p>
+                <p class="prix">19€</p>
+            </div>
+        </div>
+        <div class="plats">
+            <h2 class="titre-cat">Plats</h2>
+            <div class="carte-item">
+                <p class="nom">Filet de Bœuf flambé et son jus de veau caramélisé au whisky</p>
+                <p class="prix">31€</p>
+            </div>
+            <p class="trait">_______________________________</p>
+            <div class="carte-item">
+                <p class="nom">Demi-coquelet rôti, farci aux marrons et laqué au porto, sauce forestière à la moutarde à l'ancienne</p>
+                <p class="prix">28€</p>
+            </div>
+            <p class="trait">_______________________________</p>
+            <div class="carte-item">
+                <p class="nom">Filet de kangourou sauce foie gras</p>
+                <p class="prix">29€</p>
+            </div>
+            <p class="trait">_______________________________</p>
+            <div class="carte-item">
+                <p class="nom">Sole meunière et son beurre tressé parfumé aux herbes fines et aux perles de yuzu</p>
+                <p class="prix">29€</p>
+            </div>
+            <p class="trait">_______________________________</p>
+            <div class="carte-item">
+                <p class="nom">Légine sauce beurre blanc parfumée au combava émulsion de rougail concombre</p>
+                <p class="prix">33€</p>
+            </div>
+            <p class="trait">_______________________________</p>
+            <div class="carte-item">
+                <p class="nom">L'assiette du potager</p>
+                <p class="prix">22€</p>
+            </div>
+        </div>
+        <div class="dessert">
+            <h2 class="titre-cat">Desserts</h2>
+            <div class="carte-item">
+                <p class="nom">Riz au lait du Palais des Sens (compotée de pomme flambée au rhum vieux et crumble de muesli)</p>
+                <p class="prix">12€</p>
+            </div>
+            <p class="trait">_______________________________</p>
+            <div class="carte-item">
+                <p class="nom">Chou au chocolat blanc et caramel beurre salé à la passion</p>
+                <p class="prix">12€</p>
+            </div>
+            <p class="trait">_______________________________</p>
+            <div class="carte-item">
+                <p class="nom">Trianon au chocolat</p>
+                <p class="prix">12€</p>
+            </div>
+        </div>
+    </div>
+</div>
+</template>
+
+<style>
+.titre {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 20px 0;
+    color: black;
+}
+.titre-cat{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    background-color: #000;
+    width:150px;
+    margin: 30px auto;
+
+}
+
+/*.titre::after, .titre-cat::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #cba529;
+    margin: 10px auto;
+}*/
+
+.carte-content{
+    color: black;
+    text-align: center;
+}
+
+.carte-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px; 
+    font-size: 1.3rem;
+}
+
+.carte-item p{
+    margin:0 5px;
+}
+
+.trait{
+    color: #cba529;
+    font-weight: 900;
+
+}
+
+@media screen and
+(max-width: 1023px){
+    .carte-item{
+        margin-left:5%;
+        margin-right:5%;
+    }
+}
+
+
+</style>

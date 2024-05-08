@@ -1,47 +1,72 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { watch } from 'vue';
+import { RouterLink, RouterView, routerKey, useRoute} from 'vue-router';
+import Headbar from "@/components/headbar.vue";
+import Downbar from "@/components/downbar.vue";
+import {ref} from "vue";
+const headAccueil = ref(false);
+const headReserver = ref(false);
+const headCarte = ref(false);
+const headContact = ref(false);
+let route = useRoute();
+const updateHeaderStates = () => {
+  let path = route.fullPath;
+  if (path.includes("/reserver")) {
+    headReserver.value = true;
+    headAccueil.value = false;
+    headCarte.value = false;
+    headContact.value = false;
+  } else if (path.includes("/carte")) {
+    headCarte.value = true;
+    headAccueil.value = false;
+    headReserver.value = false;
+    headContact.value = false;
+  } else if (path.includes("/contact")) {
+    headContact.value = true;
+    headAccueil.value = false;
+    headReserver.value = false;
+    headCarte.value = false;
+  } else if (path === "/") {
+    headAccueil.value = true;
+    headReserver.value = false;
+    headCarte.value = false;
+    headContact.value = false;
+  } else {
+    headAccueil.value = false;
+    headReserver.value = false;
+    headCarte.value = false;
+    headContact.value = false;
+  }
+};
+
+updateHeaderStates();
+
+watch(
+      () => route,
+      () => {
+        updateHeaderStates();
+      },
+      { deep: true }
+    );
+
+
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <headbar :head_accueil="headAccueil" :head_carte="headCarte" 
+  :head_contact="headContact" :head_reserver="headReserver"
+  id = "headbar" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+  <RouterView id="content"/>
 
-  <main>
-    <TheWelcome />
-  </main>
+  <Downbar/>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+#content {
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+  position: relative;
 }
 </style>
