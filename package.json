@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build:origin": "run-p type-check \"build-only {@}\" --",
-    "build": "pnpm run build:dev",
+    "build": "npm run build:dev",
     "build:dev": "vite build --base='./' --sourcemap",
     "build:prod": "vite build --base='./'",
-    "serve": "pnpm run serve:src",
+    "serve": "npm run serve:src",
     "serve:src": "vite --open",
     "serve:dist:dev": "pnpx browser-sync ./dist --single --no-notify --no-ui",
     "preview": "vite preview",
