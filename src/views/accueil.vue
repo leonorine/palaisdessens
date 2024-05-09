@@ -80,7 +80,7 @@
 
                     <figure class="gallery__thumb">
                         <img src="../../public/plats-accueil/carre/IMG_8030.jpg" alt="Risotto au corail d'oursin gambas mariné séra flambée au rhum vieux" class="gallery__image">
-                        <figcaption class="gallery__caption">Risotto au corail d'oursin gambas mariné séra flambée au rhum vieux</figcaption>
+                        <figcaption class="gallery__caption">Risotto au corail d'oursin gambas mariné séra flambée au rhum vieux </figcaption>
                     </figure>
 
 
