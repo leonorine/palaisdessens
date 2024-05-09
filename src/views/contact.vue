@@ -450,12 +450,12 @@ export default {
         const contact_message = document.getElementById("contact_message") as HTMLInputElement;
       try {
         
-         /*emailjs.send('service_i9ne9fq', 'template_baladfu', {
+         emailjs.send('service_i9ne9fq', 'template_baladfu', {
             contact_name: contact_name.value,
             contact_email: contact_email.value,
             contact_tel: contact_tel.value,
             contact_message: contact_message.value
-        }, 's2agBIP-I9AkmDp3u') */
+        }, 's2agBIP-I9AkmDp3u');
         closeForm();  
         showMessage();     
       } catch (err) {
