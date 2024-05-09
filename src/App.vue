@@ -64,9 +64,10 @@ watch(
 </template>
 
 <style scoped>
-
+#headbar{
+  width:100%;
+}
 #content {
-
   position: relative;
 }
 </style>

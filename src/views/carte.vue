@@ -123,7 +123,7 @@
 
 }
 
-@media screen and
+@media screen and (min-width: 768px) and
 (max-width: 1023px){
     .carte-item{
         margin-left:5%;
@@ -131,5 +131,22 @@
     }
 }
 
+@media screen and (max-width: 767px){
+    .carte-item{
+        font-size: 0.7rem;
+        margin-left:6%;
+        margin-right:6%;
+    }
+    .titre {
+        text-align: center;
+        font-size: 0.9rem;
+        margin: 15px 0;
+    }
+    .titre-cat{
+        font-size: 0.9rem;
+        margin: 20px auto;
+    
+    }
+}
 
 </style>

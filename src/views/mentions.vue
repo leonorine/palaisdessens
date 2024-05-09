@@ -58,13 +58,13 @@
 
 @media screen and (max-width: 767px){
     .header{
-        font-size: 1.2rem;
+        font-size: 0.7rem;
         width: 60%;
     }
     
     .mentions{
-        font-size: 1.1rem;
-        line-height: 1.3;
+        font-size: 0.7rem;
+        line-height: 1.1;
     }
 
 }

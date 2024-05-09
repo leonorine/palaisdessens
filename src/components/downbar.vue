@@ -111,7 +111,7 @@ span{
     margin-top: 0;
 }
 
-@media screen and
+@media screen and (min-width: 768px) and
 (max-width: 1023px){
     .BackToTop{
         margin-right: 3%;
@@ -119,6 +119,38 @@ span{
     .downbar{
         font-size: 1.1rem;
     }
+}
+
+@media screen and (max-width: 767px){
+    .down-logo{
+        width:70px;
+        
+    }
+    .BackToTop img{
+        width: 35px;
+    }
+    .BackToTop{
+        margin-right: 5%;
+        right: -45%;
+        bottom: 50px;
+    }
+    .downbar{
+        font-size: 0.8rem;
+        height: 192px;
+    }
+
+    .infos-complementaires{
+        font-size: 0.8rem;
+    }
+
+    .icone-fb img{
+        width:23px;
+    }
+    
+    .icone-insta img{
+        width:25px;
+    }
+
 }
 
 

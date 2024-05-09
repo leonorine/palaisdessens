@@ -263,35 +263,50 @@ a:hover{
 
 @media screen and (max-width: 767px) {
   .header p{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   .control input, .control textarea{
-    font-size: 0.9rem;
-    margin: 8px 3px;
+    font-size: 0.6rem;
+    margin: 5px 3px;
     width: 50%;
   }
   .titre{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .titre::after{
     width: 100px;
     height: 1px;
   }
   .control button{
-
-    font-size: 0.9rem;
+    padding: 5px 10px;
+    font-size: 0.7rem;
 }
   .background{
-    min-height: 570px;
+    min-height: 410px;
     min-width: 300px;
   }
 
   .container{
     padding: 0 5%;
     margin: 70px 2% 90px 2%;
-
     
-}
+  }
+  .custom-alert{
+    width: 70%;
+    left:15%;
+    top:40%;
+  }
+  .custom-alert h4{
+    font-size: 1rem;
+  }
+  .custom-alert-content{
+    font-size: 0.7rem;
+
+  }
+  .custom-alert-close {
+    padding: 3px 7px;
+    font-size: 0.7rem;
+  }
 }
   
 

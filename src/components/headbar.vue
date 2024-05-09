@@ -25,6 +25,7 @@
   text-align: center;
   max-height: max-content;
   box-shadow: 0 2px 15px #2c2c2c;
+
 }
 
 
@@ -57,8 +58,7 @@
   grid-template-columns:  10% 10% 10% 10% 10% 10% 10% 10% 10% 10%   ;
   grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   height: 140px;
-  margin-left: 10%;
-
+  margin-left: 2%;
   
 }
 
@@ -75,11 +75,9 @@
 
 
 .nav-logo{
-  grid-column-start: 5;
-  grid-column-end: 6;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  margin-top: 10px;
+  position: absolute;
+  left:46%
+  
 }
 
 .nav-logo img{
@@ -89,36 +87,62 @@
   
 }
 
-@media screen and (min-width: 768px) and
-(max-width: 1023px){
-  .navbar-brand{
-    margin-left:5%;
-  }
-
+@media screen and (max-width:1023px){
   .nav-logo{
-    margin-left: 20%;
-    margin-right: 0;
+    left: 44%;
   }
 }
+
+
 
 @media screen and
 (max-width: 767px){
   .navbar-brand{
-    margin-left: -10px;
-    margin-right: 4%;
+    height: 90px;
   }
 
   .nav-logo{
-    margin-left: 45%;
-    margin-right: 0;
+    left: 44%;
+  }
+
+  .nav-logo img{
+    margin-top: 10px;
+    width: 80%;
+    max-width: 100px;
+    min-width: 80px;
   }
 
   .navbar-item--accueil::after, .navbar-item--carte::after, .navbar-item--contact::after, .navbar-item--reserver::after{
-    width: 70px;
+    width: 40px;
+    height: 1px;
     
   }
   .navbar-item{
-    font-size: 1.2rem;
+    font-size: 0.8rem;
+    width:60px;
+    margin: 10px 27%;
+  }
+}
+
+@media screen and
+(max-width: 670px){
+  .nav-logo{
+    left: 42%;
+  }
+}
+
+@media screen and
+(max-width: 558px){
+  .nav-logo{
+    left: 40%;
+  }
+
+}
+
+@media screen and
+(max-width: 434px){
+  .nav-logo{
+    left: 38%;
   }
 }
 

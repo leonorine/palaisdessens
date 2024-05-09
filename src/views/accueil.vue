@@ -2,9 +2,9 @@
     <section>
     <div class="header">
     <div class="head-video">
-        <video autoplay loop>
-            <!-- <source src = "../../public/pds.mov" type="video/mov"/>
-            <a href="../../public/pds.mov"></a> -->
+        <video muted autoplay preload="auto" playsinline  loop>
+            <source src = "../../public/PDSvideo.mp4" type="video/mp4"/>
+            <a href="../../public/PDSvideo.mp4"></a>
         </video>
     </div>
     <div class="header-content">
@@ -328,14 +328,26 @@
 (max-width: 767px){
     .header-content p{
         margin: 0 5%;
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+    .titre{
+        font-size:1.5rem;
     }
     .head-video video {
         width: 95%;
-        margin:1% 0;
+        max-width: 400px;
+        margin-top:-60px;
+        margin-bottom: -50px;
+
     }
+
+    .header-content{
+        margin:0;
+        
+    }
+    
     .gallery img{
-        width: 100px;
+        width:73px;
     }
 
     .chefs{
@@ -353,11 +365,9 @@
         padding-left:0;
         margin:0 auto;
     }
-
-
-
     .chefs-content {
         margin:10px 1%;
+        font-size: 0.8rem;
     }
 
 }

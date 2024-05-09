@@ -95,10 +95,11 @@
     position:fixed;
     background-color: #000;
     padding: 0 25px;
-    width :400px;
+    width :40%;
+    margin: 0 40% 0 30%;
     height: 450px;
     text-align: center;
-    top: 17%;
+    top: 25%;
     
     
 }
@@ -264,6 +265,109 @@ a:hover{
     }
 
 }
+@media screen and
+(max-width: 767px){
+
+    .titre{
+        font-size: 1.2rem;
+        margin: 20px 0;
+    
+    }
+    
+    .titre::after {
+        width: 130px;
+        height: 2px;
+        margin: 3px auto;
+    }
+    .header-content h2{
+        margin-top: 20px;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .header-content p{
+        margin: 5px 0;
+        font-size: 0.7rem;
+    }
+    #contact-active{
+        padding: 5px;
+        margin: 25px 25%;
+        width: 50%;
+        font-size: 0.7rem;
+        
+    }
+
+    .api-maps iframe{
+        width: 90%;
+        height: 250px;
+        margin : 15px 5%;
+    }
+    .contact-form{
+        width :70%;
+        min-width :max-content;
+        max-width: 350px;
+        margin: 0 0 0 30%;
+        height: 290px;
+        text-align: center;
+        top: 25%;
+        left: -60px;
+        
+    }
+    .field{
+        margin: 15px 0;
+        
+    }
+    
+    .field input,.field textarea{
+        padding: 2px;
+        font-size: 0.8rem;
+        min-width: 80%;
+        max-width: 90%;
+        border: #000 2px solid !important;
+    }
+
+    .field textarea{
+        min-height: 40px;
+        max-height: 40px;
+    }
+    .control input:focus, .control textarea:focus{
+        border: #cba529 2px solid !important;
+        
+    }
+
+    #form{
+        margin-top: 10px;
+    }
+    
+    .button{
+        height: 20px;
+        width: 70px;
+        margin:5px auto;
+        font-size: 0.7rem;
+        color: #000;
+    }
+    
+    #envoyer,#annuler{
+        margin: 0 10px; 
+    }
+    
+    #envoyer button,#annuler button{
+        background-color: #fff;
+        border-radius: 10px;
+        border: none;
+    }
+
+    #message{
+        top: -80px;
+        height: 50px;
+        font-size: 0.9rem;
+        font-weight: 700;
+    
+    
+    }
+
+}
+
 
 </style>
 
