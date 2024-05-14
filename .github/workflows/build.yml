@@ -49,8 +49,8 @@ jobs:
           CI: true
         run: |
           npm install --global pnpm
-          npm install
-          npm run build
+          pnpm install
+          pnpm build
 
 
       - name: GitHub Pages
