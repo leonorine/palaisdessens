@@ -38,8 +38,8 @@ jobs:
           SITE_URL: ${{ inputs.site-url }}
         run: |
           npm install --global pnpm
-          pnpm install
-          pnpm build
+          npm install
+          npm run build
 
 # Please do not touch the following action
       - name: Store deployment content
