@@ -11,7 +11,11 @@
       "path": "./tsconfig.cypress-ct.json"
     }
   ],
+  "include": ["./src/**/*"],
   "compilerOptions": {
-    "module": "NodeNext"
+    "moduleResolution": "Bundler",
+    "paths": {
+      "@/*": ["./*"]
+    }
   }
 }
