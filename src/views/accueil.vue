@@ -13,7 +13,7 @@
             Si vous cherchez une expérience gastronomique hors du commun, 
             Le Palais des Sens est l'endroit parfait pour vous. Situé dans 
             la rue Auguste Babet à Saint Pierre, ce restaurant vous promet 
-            de stimuler tous vos sens. A commencer par la vue des assiettes 
+            de stimuler tous vos sens. À commencer par la vue des assiettes 
             dressées avec passion par nos jeunes chefs qui sont là pour vous 
             faire entrer dans un univers plein de sensations culinaires. 
             De plus, une fois par mois, nos 
