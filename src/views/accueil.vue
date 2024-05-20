@@ -350,6 +350,11 @@
         width:73px;
     }
 
+    .gallery__thumb:hover .gallery__caption {
+        font-size: 0.7rem;
+
+    }
+
     .chefs{
         display: flex;
         flex-direction: column;
