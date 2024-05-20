@@ -4,7 +4,7 @@
 
     <div class="content">
         <p>Ouvert du Mardi au Samedi : 19:00 - 00:30</p>
-        <p id = "adresse">1 bis rue Auguste Babet 97410 St Pierre La Réunion <p><a id="telephone" href="tel:">02 62 01 73 66</a></p></p>
+        <p id = "adresse">1 bis rue Auguste Babet 97410 St Pierre La Réunion <p><a class="telephone" href="tel:">02 62 01 73 66</a> - <a class="telephone" href="tel:">06 93 85 93 51</a></p></p>
         <div class="icone-reseaux">
             <a class = "icone-fb" href="https://www.facebook.com/people/Le-Palais-des-Sens/100090839094288/">
                 <img src="../../public/icones/icone-fb.jpeg" alt="Facebook">
@@ -38,7 +38,7 @@
     box-shadow: 0 8px 7px 0 rgba(0, 0, 0, 0.5);
     margin-bottom: 0;
 }
-#telephone:hover{
+.telephone:hover{
     color: #cba529;
 }
 
@@ -54,7 +54,7 @@ span{
     
 }
 
-#telephone{
+.telephone{
     text-decoration: none;
     color: #fff;
 }

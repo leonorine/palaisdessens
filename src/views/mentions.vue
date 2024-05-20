@@ -11,11 +11,11 @@
             <p>Nom de l’entreprise : LA LUNE DAMARO Sarl</p>
             <p>Adresse : 1Bis rue Auguste Babet, 97410 Saint Pierre</p>
             <p>Téléphone : 02 62 01 73 66</p>
-            <p>E-Mail : palaisdessens.974@gmail.com</p>
+            <p>E-Mail : reservationslepalaisdessens974@gmail.com</p>
             <p>Inscription au registre du commerce et des sociétés</p>
             <p>RCS Saint Pierre : 920 329 695 00018 </p>
             <p>Gérant : Monsieur Steve Onier</p>
-            <p>Certificat SSL et hébergement : IONOS</p>
+            <p>Certificat SSL et hébergement : Netlify</p>
             <p>Conception et réalisation du site : Tibere Léonorine</p>
         </div>
         

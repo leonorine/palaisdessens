@@ -37,7 +37,7 @@
                 </div>
                 <div class="field">
                     <div class="control">
-                    <input class="input"  placeholder="Heure" list="heures" min="19:00"  max="00:00" required="true" id="resa_heure">
+                    <input class="input"  placeholder="Heure" list="heures" min="19:00"  max="22:00" required="true" id="resa_heure">
                     <datalist id="heures">
                         <option value="19:00"></option>
                         <option value="19:15"></option>
@@ -52,14 +52,6 @@
                         <option value="21:30"></option>
                         <option value="21:45"></option>
                         <option value="22:00"></option>
-                        <option value="22:15"></option>
-                        <option value="22:30"></option>
-                        <option value="22:45"></option>
-                        <option value="23:00"></option>
-                        <option value="23:15"></option>
-                        <option value="23:30"></option>
-                        <option value="23:45"></option>
-                        <option value="00:00"></option>
                     </datalist>
                     </div>
                 </div>
@@ -336,6 +328,28 @@ function showCustomAlert(message: string | null) {
   
   }
 
+  function showCustomAlertRouge(message: string | null) {
+  const customAlert = document.getElementById('custom-alert');
+  const customAlertMessage = document.getElementById('custom-alert-message');
+  const customAlertClose = document.getElementById('custom-alert-close');
+  const container = document.getElementById('container');
+    if (customAlert && customAlertMessage && customAlertClose && container) {
+        customAlertMessage.textContent = message;
+        customAlertMessage.style.color = "red";
+        customAlert.style.display = 'flex';
+        container.style.opacity = '0.3';
+        container.style.filter = 'blur(2px)';
+        container.style.transition = 'all 0.3s';
+        customAlertClose.addEventListener('click', () => {
+            customAlert.style.display = 'none';
+            container.style.opacity = '1';
+            container.style.transition = 'all 0.3s';
+            container.style.filter = 'none';
+        });
+    } 
+  
+  }
+
 export default {
   name: 'ContactUs',
   data() {
@@ -359,8 +373,14 @@ export default {
         const resa_heure = document.getElementById("resa_heure") as HTMLInputElement;
         const resa_message = document.getElementById("resa_message") as HTMLInputElement;
       try {
-        
-        emailjs.send('service_mexo8rc', 'template_sx0cvhs', {
+        const time = new Date(`1970-01-01T${resa_heure.value}:00`);
+        if( new Date(`1970-01-01T19:00:00`) > time || time > new Date(`1970-01-01T22:00:00`)){
+            console.log(time);
+            showCustomAlertRouge("Votre réservation n'a pas été prise en compte, veuillez choisir une heure entre 19h et 22h.");
+            return;
+        }
+        else{
+          emailjs.send('service_mexo8rc', 'template_sx0cvhs', {
             resa_name: resa_name.value,
             resa_email: resa_email.value,
             resa_tel: resa_tel.value,
@@ -368,9 +388,11 @@ export default {
             resa_date: resa_date.value,
             resa_heure: resa_heure.value,
             resa_message: resa_message.value
-        }, 'Y9263P4yw98HtXCnm');     
-        showCustomAlert("Votre réservation a bien été prise en compte, nous vous recontacterons rapidement pour confirmer votre réservation.");
-      } catch (err) {
+          }, 'Y9263P4yw98HtXCnm');    
+          showCustomAlert("Votre réservation a bien été prise en compte, nous vous recontacterons rapidement pour confirmer votre réservation.");
+      
+        }
+        } catch (err) {
            if (err instanceof ReferenceError) {
             showCustomAlert("Votre réservation n'a pas pu être prise en compte, veuillez réessayer. Si l'erreur persiste, veuillez nous contacter par téléphone.");
            } else {
