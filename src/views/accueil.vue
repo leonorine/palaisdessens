@@ -3,8 +3,8 @@
     <div class="header">
     <div class="head-video">
         <video muted autoplay preload="auto" playsinline  loop>
-            <source src = "../../public/PDSvideo.mp4" type="video/mp4"/>
-            <a href="../../public/PDSvideo.mp4"></a>
+            <!-- <source src = "../../public/PDSvideo.mp4" type="video/mp4"/>
+            <a href="../../public/PDSvideo.mp4"></a> -->
         </video>
     </div>
     <div class="header-content">
