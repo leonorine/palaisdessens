@@ -392,7 +392,7 @@ export default {
           return;
         }
         else{
-          /*emailjs.send('service_mexo8rc', 'template_sx0cvhs', {
+          emailjs.send('service_mexo8rc', 'template_sx0cvhs', {
             resa_name: resa_name.value,
             resa_email: resa_email.value,
             resa_tel: resa_tel.value,
@@ -400,7 +400,7 @@ export default {
             resa_date: resa_date.value,
             resa_heure: resa_heure.value,
             resa_message: resa_message.value
-          }, 'Y9263P4yw98HtXCnm');    */
+          }, 'Y9263P4yw98HtXCnm');    
           showCustomAlert("Votre réservation a bien été prise en compte, nous vous recontacterons rapidement pour confirmer votre réservation.");
       
         }
