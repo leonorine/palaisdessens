@@ -96,7 +96,7 @@
     background-color: #000;
     padding: 0 25px;
     width :40%;
-    margin: 0 40% 0 30%;
+    margin: 0 40% 0 40%;
     height: 450px;
     text-align: center;
     top: 25%;
@@ -264,6 +264,12 @@ a:hover{
         margin : 0 15%;
     }
 
+    .contact-form{
+        margin: 0 40% 0 30%;
+        
+        
+    }
+
 }
 @media screen and
 (max-width: 767px){
@@ -306,7 +312,7 @@ a:hover{
         width :70%;
         min-width :max-content;
         max-width: 350px;
-        margin: 0 0 0 30%;
+        margin: 0 40% 0 35%;
         height: 290px;
         text-align: center;
         top: 25%;
@@ -366,6 +372,22 @@ a:hover{
     
     }
 
+}
+
+@media screen and
+(max-width: 670px){
+    .contact-form{
+        margin: 0 40% 0 30%; 
+        
+    }
+}
+
+@media screen and
+(max-width: 558px){
+    .contact-form{
+        margin: 0 40% 0 28%; 
+        
+    }
 }
 
 
