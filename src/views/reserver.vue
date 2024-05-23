@@ -314,6 +314,7 @@ function showCustomAlert(message: string | null) {
   const container = document.getElementById('container');
     if (customAlert && customAlertMessage && customAlertClose && container) {
         customAlertMessage.textContent = message;
+        customAlertMessage.style.color = "black";
         customAlert.style.display = 'flex';
         container.style.opacity = '0.3';
         container.style.filter = 'blur(2px)';
@@ -349,6 +350,14 @@ function showCustomAlert(message: string | null) {
     } 
   
   }
+  function notSundaysAndMondays(date:HTMLInputElement) {
+    
+    const dateValue = new Date(`${date.value}T01:00:00`);
+    if (dateValue.getDay() === 0 || dateValue.getDay() === 1) {
+      return false;
+    }
+    return true;
+}
 
 export default {
   name: 'ContactUs',
@@ -375,12 +384,15 @@ export default {
       try {
         const time = new Date(`1970-01-01T${resa_heure.value}:00`);
         if( new Date(`1970-01-01T19:00:00`) > time || time > new Date(`1970-01-01T22:00:00`)){
-            console.log(time);
             showCustomAlertRouge("Votre réservation n'a pas été prise en compte, veuillez choisir une heure entre 19h et 22h.");
             return;
         }
+        else if(notSundaysAndMondays(resa_date) == false){
+          showCustomAlertRouge("Votre réservation n'a pas été prise en compte, nous sommes fermés les dimanches et les lundis.");
+          return;
+        }
         else{
-          emailjs.send('service_mexo8rc', 'template_sx0cvhs', {
+          /*emailjs.send('service_mexo8rc', 'template_sx0cvhs', {
             resa_name: resa_name.value,
             resa_email: resa_email.value,
             resa_tel: resa_tel.value,
@@ -388,7 +400,7 @@ export default {
             resa_date: resa_date.value,
             resa_heure: resa_heure.value,
             resa_message: resa_message.value
-          }, 'Y9263P4yw98HtXCnm');    
+          }, 'Y9263P4yw98HtXCnm');    */
           showCustomAlert("Votre réservation a bien été prise en compte, nous vous recontacterons rapidement pour confirmer votre réservation.");
       
         }

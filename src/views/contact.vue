@@ -390,6 +390,15 @@ a:hover{
     }
 }
 
+@media screen and
+(min-width: 1235px){
+    .contact-form{
+        top:15%
+        
+    }
+}
+
+
 
 </style>
 
