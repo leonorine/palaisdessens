@@ -350,9 +350,13 @@
         width:73px;
     }
 
+    .gallery__image:hover img{
+        transform: scale(1.3);
+        
+    }
+
     .gallery__thumb:hover .gallery__caption {
         font-size: 0.6rem;
-
     }
 
     .chefs{
