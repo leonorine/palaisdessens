@@ -12,40 +12,40 @@
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Retour d'Asie, ravioles de volaille et son bouillon de poulet au gingembre et à la citronnelle</p>
-                <p class="prix">16€</p>
+                <p class="nom">Nougat de Camembert parfumé à la truffe et son velouté de petits pois à la menthe</p>
+                <p class="prix">19€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Nougat de Camembert parfumé à la truffe et son velouté de petits pois à la menthe</p>
-                <p class="prix">19€</p>
+                <p class="nom">Mille-feuille d'artichaut barigoule</p>
+                <p class="prix">16€</p>
             </div>
         </div>
         <div class="plats">
             <h2 class="titre-cat">Plats</h2>
             <div class="carte-item">
                 <p class="nom">Filet de Bœuf flambé et son jus de veau caramélisé au whisky</p>
+                <p class="prix">33€</p>
+            </div>
+            <p class="trait">_______________________________</p>
+            <div class="carte-item">
+                <p class="nom">Magret de canard rôti, sauce miel au poivre de Madagascar et gingembre confit</p>
                 <p class="prix">31€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Demi-coquelet rôti, farci aux marrons et laqué au porto, sauce forestière à la moutarde à l'ancienne</p>
+                <p class="nom">Le Cordon bleu du Palais des Sens, sauce cheddar au paprika fumé</p>
                 <p class="prix">28€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Filet de kangourou sauce foie gras</p>
-                <p class="prix">29€</p>
-            </div>
-            <p class="trait">_______________________________</p>
-            <div class="carte-item">
-                <p class="nom">Sole meunière et son beurre tressé parfumé aux herbes fines et aux perles de yuzu</p>
-                <p class="prix">29€</p>
-            </div>
-            <p class="trait">_______________________________</p>
-            <div class="carte-item">
-                <p class="nom">Légine sauce beurre blanc parfumée au combava émulsion de rougail concombre</p>
+                <p class="nom">Pavé de dorade coryphène rôti, sauce thaï et son émulsion de citron vert</p>
                 <p class="prix">33€</p>
+            </div>
+            <p class="trait">_______________________________</p>
+            <div class="carte-item">
+                <p class="nom">Filet de bar rôti, garni à la vierge de légumes, sauce beurre blanc à la passion</p>
+                <p class="prix">29€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
@@ -71,6 +71,7 @@
             </div>
         </div>
     </div>
+    <p id = "ttc" class="carte-item">Nos prix sont TTC et service compris, hors boissons</p>
 </div>
 </template>
 
@@ -89,6 +90,10 @@
     width:150px;
     margin: 30px auto;
 
+}
+
+#ttc {
+    margin: 80px 0 -30px 0 !important; 
 }
 
 /*.titre::after, .titre-cat::after {
