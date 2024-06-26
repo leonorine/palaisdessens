@@ -359,6 +359,15 @@ function showCustomAlert(message: string | null) {
     return true;
 }
 
+function notHolidays(date:HTMLInputElement) {
+    
+    const dateValue = new Date(`${date.value}T01:00:00`);
+    if (dateValue < new Date('2024-07-30T01:00:00')|| dateValue > new Date('2024-08-11T01:00:00')) {
+      return true;
+    }
+    return false;
+}
+
 export default {
   name: 'ContactUs',
   data() {
@@ -391,8 +400,12 @@ export default {
           showCustomAlertRouge("Votre réservation n'a pas été prise en compte, nous sommes fermés les dimanches et les lundis.");
           return;
         }
+        else if(notHolidays(resa_date) == false){
+          showCustomAlertRouge("Votre réservation n'a pas été prise en compte, nous sommes fermés du 30 juillet au 12 août inclus.");
+          return;
+        }
         else{
-          emailjs.send('service_mexo8rc', 'template_sx0cvhs', {
+           emailjs.send('service_mexo8rc', 'template_sx0cvhs', {
             resa_name: resa_name.value,
             resa_email: resa_email.value,
             resa_tel: resa_tel.value,
@@ -400,7 +413,7 @@ export default {
             resa_date: resa_date.value,
             resa_heure: resa_heure.value,
             resa_message: resa_message.value
-          }, 'Y9263P4yw98HtXCnm');    
+          }, 'Y9263P4yw98HtXCnm');   
           showCustomAlert("Votre réservation a bien été prise en compte, nous vous recontacterons rapidement pour confirmer votre réservation.");
       
         }
