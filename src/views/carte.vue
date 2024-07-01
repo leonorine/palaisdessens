@@ -56,17 +56,17 @@
         <div class="dessert">
             <h2 class="titre-cat">Desserts</h2>
             <div class="carte-item">
-                <p class="nom">Riz au lait du Palais des Sens (compotée de pomme flambée au rhum vieux et crumble de muesli)</p>
+                <p class="nom">Café Liégeois revisité </p>
                 <p class="prix">12€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Chou au chocolat blanc et caramel beurre salé à la passion</p>
+                <p class="nom">Pavlova exotique</p>
                 <p class="prix">12€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Trianon au chocolat</p>
+                <p class="nom">Cheese Cake aux fruits des bois</p>
                 <p class="prix">12€</p>
             </div>
         </div>
