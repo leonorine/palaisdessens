@@ -24,6 +24,17 @@
         
     </div>
     </div>
+    <div class = "actuality">
+        <div class="actuality-content">
+            <h1 class = "titre"> Prochainement ...</h1> 
+            <p>
+                Ce mercredi 10 juillet, le Palais des Sens vous accueille pour une expérience des plus immersives : <span>Le Blind Dinner</span>
+            </p>
+        </div>
+        <div class="actuality-img">
+            <img src="../../public/blind-dinner.jpg" alt="Blind Dinner">
+        </div>
+        </div>
         <div class="titre-gallery"><h1 class="titre" style = "color:black;">Galerie Photos</h1></div>
           
         <div class="gallery">
@@ -190,6 +201,27 @@
 
     }
 
+    .actuality{
+        color: black;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+
+    .actuality-content span{
+        font-weight: 900;
+    }
+
+    .actuality-content p{
+        margin: 0 10%;
+    }
+    
+
+    .actuality-img img{
+        height: 400px;
+        margin: 50px 0;
+    }
+
 
     .gallery {
         color: #000;
@@ -247,6 +279,18 @@
 
     }
 
+    .actuality::before{
+        content: "";
+        display: grid;
+        width: 70%;
+        height: 2px;
+        background-color: #000;
+        margin: 0  auto;
+        margin-bottom: 20px;
+        margin-top: 50px;
+            
+        
+    }
     
 
     .chefs-header::before{
@@ -343,6 +387,16 @@
 
     .header-content{
         margin:0;
+    }
+
+    .actuality-content{
+        font-size: 0.8rem;
+        margin: 0 5%;
+    }
+
+    .actuality-img img{
+        height: 230px;
+        
         
     }
     
