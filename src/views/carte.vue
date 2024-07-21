@@ -12,13 +12,13 @@
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Nougat de Camembert parfumé à la truffe et son velouté de petits pois à la menthe</p>
-                <p class="prix">19€</p>
+                <p class="nom">Velouté de lentilles corail saveur péï, toastinette gourmande de philadelphia aux brèdes et champignons de Paris</p>
+                <p class="prix">16€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Mille-feuille d'artichaut barigoule</p>
-                <p class="prix">16€</p>
+                <p class="nom">Tartelette de crème brûlée au foie gras mariné au rhum vieux, chutney d'oignons à l'abricot parfumé au romarin</p>
+                <p class="prix">19€</p>
             </div>
         </div>
         <div class="plats">
