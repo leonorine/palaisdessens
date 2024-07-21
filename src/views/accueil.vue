@@ -24,7 +24,7 @@
         
     </div>
     </div>
-    <div class = "actuality">
+    <!-- <div class = "actuality">
         <div class="actuality-content">
             <h1 class = "titre"> Prochainement ...</h1> 
             <p>
@@ -34,7 +34,7 @@
         <div class="actuality-img">
             <img src="../../public/blind-dinner.jpg" alt="Blind Dinner">
         </div>
-        </div>
+    </div> -->
         <div class="titre-gallery"><h1 class="titre" style = "color:black;">Galerie Photos</h1></div>
           
         <div class="gallery">
