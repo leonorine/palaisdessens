@@ -114,7 +114,7 @@
             </div>
             <div class="chefs-content">
                 <p> Découvrez les maîtres de la gastronomie derrière les délices du 
-                    Palais des Sens, Steve Onier et Alexandre Basileu. Malgré leur 
+                    Palais des Sens, Steve Onier et Alexandre Basileu--Orlando. Malgré leur 
                     jeunesse, ces deux chefs sont des experts dans l'art subtil de 
                     marier les saveurs et les textures. Dans la cuisine ouverte de 
                     notre établissement, ce duo dynamique s'engage dans un ballet 
