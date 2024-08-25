@@ -8,17 +8,17 @@
             <h2 class="titre-cat">Entrées</h2>
             <div class="carte-item">
                 <p class="nom">Tartare de gambas, mayonnaise maison à l'encre de seiche et son guacamole d'avocat</p>
-                <p class="prix">17€</p>
+                <p class="prix">19€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Velouté de lentilles corail saveur péï, toastinette gourmande de philadelphia aux brèdes et champignons de Paris</p>
+                <p class="nom">Œuf poché, caviar d'aubergines à l'asiatique et espuma aux shitakés</p>
                 <p class="prix">16€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Tartelette de crème brûlée au foie gras mariné au rhum vieux, chutney d'oignons à l'abricot parfumé au romarin</p>
-                <p class="prix">19€</p>
+                <p class="nom">Tartiflette revisitée</p>
+                <p class="prix">17€</p>
             </div>
         </div>
         <div class="plats">
@@ -29,8 +29,8 @@
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Magret de canard rôti, sauce miel au poivre de Madagascar et gingembre confit</p>
-                <p class="prix">31€</p>
+                <p class="nom">Carré d'agneau en croûte de moutarde à l'ancienne fumé au foin et son jus aux herbes de Provence</p>
+                <p class="prix">42€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
@@ -39,8 +39,8 @@
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Pavé de dorade coryphène rôti, sauce thaï et son émulsion de citron vert</p>
-                <p class="prix">33€</p>
+                <p class="nom">Filet de légine sauce saté</p>
+                <p class="prix">35€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
@@ -56,7 +56,7 @@
         <div class="dessert">
             <h2 class="titre-cat">Desserts</h2>
             <div class="carte-item">
-                <p class="nom">Café Liégeois revisité </p>
+                <p class="nom">Tout chocolat façon mendiant</p>
                 <p class="prix">12€</p>
             </div>
             <p class="trait">_______________________________</p>
