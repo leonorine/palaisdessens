@@ -26,7 +26,7 @@ const updateHeaderStates = () => {
     headAccueil.value = false;
     headReserver.value = false;
     headCarte.value = false;
-  } else if (path === "/") {
+  } else if (path === "/" || path === "/#top" ) {
     headAccueil.value = true;
     headReserver.value = false;
     headCarte.value = false;
