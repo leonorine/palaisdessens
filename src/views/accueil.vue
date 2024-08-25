@@ -58,8 +58,8 @@
             <div class="gallery__column">
 
                     <figure class="gallery__thumb">
-                        <img src="../../public/plats-accueil/carre/mousseline-de-julienne-et-son-calamar.jpg" alt="Mousseline de Julienne et son calamar poêlé sauce à l'encre de seiche" class="gallery__image">
-                        <figcaption class="gallery__caption">Mousseline de Julienne et son calamar poêlé sauce à l'encre de seiche</figcaption>
+                        <img src="../../public/plats-accueil/carre/magret-canard-sauce-miel.jpg" alt="Magret de canard rôti, sauce miel au poivre de Madagascar et gingembre confit" class="gallery__image">
+                        <figcaption class="gallery__caption">Magret de canard rôti, sauce miel au poivre de Madagascar et gingembre confit</figcaption>
                     </figure>
 
 
