@@ -34,7 +34,7 @@
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Le Cordon bleu du Palais des Sens, sauce cheddar au paprika fumé</p>
+                <p class="nom">Quasi de veau aux saveurs de l'Italie</p>
                 <p class="prix">28€</p>
             </div>
             <p class="trait">_______________________________</p>
