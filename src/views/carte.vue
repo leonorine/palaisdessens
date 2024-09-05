@@ -44,7 +44,7 @@
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Filet de bar rôti, garni à la vierge de légumes, sauce beurre blanc à la passion</p>
+                <p class="nom">Thazard rôti mariné au ponzu, sauce aux agrumes aux notes asiatiques et son crumble de gomazio</p>
                 <p class="prix">29€</p>
             </div>
             <p class="trait">_______________________________</p>
