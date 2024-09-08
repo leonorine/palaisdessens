@@ -73,7 +73,8 @@
         <div id = "custom-alert-content" class="custom-alert-content">
         <h4>Le Palais des Sens</h4>
           <span id = "custom-alert-message" class="custom-alert-message">Votre réservation a bien été prise en compte, nous vous recontacterons rapidement pour confirmer votre réservation.</span>
-          <button id="custom-alert-close" class="custom-alert-close">OK</button>
+          <button id="custom-alert-close" class="custom-alert-close" v-on:click="sendEmailBlindDinner">OK</button>
+          <button id="custom-alert-null" class="custom-alert-null">Changer de date</button>
         </div>
       </div>
 
@@ -223,18 +224,38 @@ a:hover{
     color: #000;
   }
   
-  .custom-alert-close {
+  .custom-alert-close{
     padding: 5px 10px;
     background-color: #000;
     color: #fff;
     font-weight: bold;
     border-radius: 10px;
     border: none;
+    margin:auto
   }
 
-  .custom-alert-close:hover {
+  .custom-alert-null {
+    display: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    margin:auto
+  }
+  
+
+ .custom-alert-null:hover {
+    cursor: pointer;
+    background-color: #f5423f;
+  }
+
+  .custom-alert-close:hover{
     background-color: #cba529;
     cursor: pointer;
+  }
+
+  .custom-alert button{
+    margin-bottom: 10px;
   }
 
   @media screen and (min-width: 768px) and
@@ -295,7 +316,7 @@ a:hover{
     font-size: 0.7rem;
 
   }
-  .custom-alert-close {
+  .custom-alert-close, .custom-alert-null {
     padding: 3px 7px;
     font-size: 0.7rem;
   }
@@ -311,14 +332,17 @@ function showCustomAlert(message: string | null) {
   const customAlert = document.getElementById('custom-alert');
   const customAlertMessage = document.getElementById('custom-alert-message');
   const customAlertClose = document.getElementById('custom-alert-close');
+  const customAlertNull = document.getElementById('custom-alert-null');
   const container = document.getElementById('container');
-    if (customAlert && customAlertMessage && customAlertClose && container) {
+    if (customAlert && customAlertMessage && customAlertClose && container && customAlertNull) {
         customAlertMessage.textContent = message;
         customAlertMessage.style.color = "black";
         customAlert.style.display = 'flex';
         container.style.opacity = '0.3';
         container.style.filter = 'blur(2px)';
         container.style.transition = 'all 0.3s';
+        customAlertClose.textContent = "OK";
+        customAlertNull.style.display = "none";
         customAlertClose.addEventListener('click', () => {
             customAlert.style.display = 'none';
             container.style.opacity = '1';
@@ -329,18 +353,63 @@ function showCustomAlert(message: string | null) {
   
   }
 
+  function isBlindDinner(date:HTMLInputElement){
+    if (date.value === '2024-09-18') {
+      return true;
+    }
+    return false;
+  }
+
+  function showCustomAlertBlindDinner() {
+  const customAlert = document.getElementById('custom-alert');
+  const customAlertMessage = document.getElementById('custom-alert-message');
+  const customAlertClose = document.getElementById('custom-alert-close');
+  const customAlertNull = document.getElementById('custom-alert-null');
+  const container = document.getElementById('container');
+    if (customAlert && customAlertMessage && customAlertClose && container) {
+        customAlertMessage.textContent = "La date que vous avez sélectionnée correspond à une soirée de dîner à l'aveugle. Souhaitez-vous tout de même maintenir votre réservation à cette date ?";
+        customAlertMessage.style.color = "black";
+        customAlert.style.display = 'flex';
+        container.style.opacity = '0.3';
+        container.style.filter = 'blur(2px)';
+        container.style.transition = 'all 0.3s';
+        customAlertClose.textContent = "Oui";
+        customAlertClose.addEventListener('click', () => {
+            customAlert.style.display = 'none';
+            container.style.opacity = '1';
+            container.style.transition = 'all 0.3s';
+            container.style.filter = 'none';
+        });
+        if (customAlertNull) {
+            customAlertNull.style.display = 'block';
+            customAlertNull.addEventListener('click', () => {
+                customAlert.style.display = 'none';
+                container.style.opacity = '1';
+                container.style.transition = 'all 0.3s';
+                container.style.filter = 'none';
+                
+            });
+        }
+        
+    } 
+  
+  }
+
   function showCustomAlertRouge(message: string | null) {
   const customAlert = document.getElementById('custom-alert');
   const customAlertMessage = document.getElementById('custom-alert-message');
   const customAlertClose = document.getElementById('custom-alert-close');
   const container = document.getElementById('container');
-    if (customAlert && customAlertMessage && customAlertClose && container) {
+  const customAlertNull = document.getElementById('custom-alert-null');
+    if (customAlert && customAlertMessage && customAlertClose && container && customAlertNull) {
         customAlertMessage.textContent = message;
         customAlertMessage.style.color = "red";
         customAlert.style.display = 'flex';
         container.style.opacity = '0.3';
         container.style.filter = 'blur(2px)';
         container.style.transition = 'all 0.3s';
+        customAlertClose.textContent = "OK";
+        customAlertNull.style.display = 'none';
         customAlertClose.addEventListener('click', () => {
             customAlert.style.display = 'none';
             container.style.opacity = '1';
@@ -404,6 +473,12 @@ export default {
           showCustomAlertRouge("Votre réservation n'a pas été prise en compte, nous sommes fermés du 30 juillet au 12 août inclus.");
           return;
         }
+        else if(isBlindDinner(resa_date) == true){
+          showCustomAlertBlindDinner();
+          return;
+            
+          }
+        
         else{
            emailjs.send('service_mexo8rc', 'template_sx0cvhs', {
             resa_name: resa_name.value,
@@ -434,6 +509,60 @@ export default {
         resa_nb.value = '';
         resa_tel.value = '';
     },
+    sendEmailBlindDinner() {
+        const resa_name = document.getElementById("resa_name") as HTMLInputElement;
+        const resa_email = document.getElementById("resa_email") as HTMLInputElement;
+        const resa_tel = document.getElementById("resa_tel") as HTMLInputElement;
+        const resa_nb = document.getElementById("resa_nb") as HTMLInputElement;
+        const resa_date = document.getElementById("resa_date") as HTMLInputElement;
+        const resa_heure = document.getElementById("resa_heure") as HTMLInputElement;
+        const resa_message = document.getElementById("resa_message") as HTMLInputElement;
+      try {
+        const time = new Date(`1970-01-01T${resa_heure.value}:00`);
+        if( new Date(`1970-01-01T19:00:00`) > time || time > new Date(`1970-01-01T22:00:00`)){
+            showCustomAlertRouge("Votre réservation n'a pas été prise en compte, veuillez choisir une heure entre 19h et 22h.");
+            return;
+        }
+        else if(notSundaysAndMondays(resa_date) == false){
+          showCustomAlertRouge("Votre réservation n'a pas été prise en compte, nous sommes fermés les dimanches et les lundis.");
+          return;
+        }
+        else if(notHolidays(resa_date) == false){
+          showCustomAlertRouge("Votre réservation n'a pas été prise en compte, nous sommes fermés du 30 juillet au 12 août inclus.");
+          return;
+        }
+        
+        else{
+           emailjs.send('service_mexo8rc', 'template_sx0cvhs', {
+            resa_name: resa_name.value,
+            resa_email: resa_email.value,
+            resa_tel: resa_tel.value,
+            resa_nb: resa_nb.value,
+            resa_date: resa_date.value.split('-').reverse().join('-'),
+            resa_heure: resa_heure.value,
+            resa_message: resa_message.value
+          }, 'Y9263P4yw98HtXCnm'); 
+          showCustomAlert("Votre réservation a bien été prise en compte, nous vous recontacterons rapidement pour confirmer votre réservation.");
+      
+        }
+        } catch (err) {
+           if (err instanceof ReferenceError) {
+            showCustomAlert("Votre réservation n'a pas pu être prise en compte, veuillez réessayer. Si l'erreur persiste, veuillez nous contacter par téléphone.");
+           } else {
+            throw err; // rethrow
+           }
+      }
+      // Reset form field
+        
+        resa_email.value = '';
+        resa_heure.value = '';
+        resa_date.value = '';
+        resa_message.value = '';
+        resa_name.value = '';
+        resa_nb.value = '';
+        resa_tel.value = '';
+    },
+  
   }
 }
 </script>
