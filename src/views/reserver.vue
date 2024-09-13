@@ -367,7 +367,7 @@ function showCustomAlert(message: string | null) {
   const customAlertNull = document.getElementById('custom-alert-null');
   const container = document.getElementById('container');
     if (customAlert && customAlertMessage && customAlertClose && container) {
-        customAlertMessage.textContent = "La date que vous avez sélectionnée correspond à une soirée de dîner à l'aveugle. Souhaitez-vous tout de même maintenir votre réservation à cette date ?";
+        customAlertMessage.textContent = "La date que vous avez sélectionnée correspond à une soirée de dîner à l'aveugle. Souhaitez-vous tout de même maintenir votre réservation à cette date ? (En cliquant sur Oui votre réservation sera automatiquement prise en compte)";
         customAlertMessage.style.color = "black";
         customAlert.style.display = 'flex';
         container.style.opacity = '0.3';
