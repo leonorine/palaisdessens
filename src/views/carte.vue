@@ -7,45 +7,45 @@
         <div class="entrees">
             <h2 class="titre-cat">Entrées</h2>
             <div class="carte-item">
-                <p class="nom">Tartare de gambas, mayonnaise maison à l'encre de seiche et son guacamole d'avocat</p>
+                <p class="nom">Vitello tonnato, perle olive truffe, brisure tuile de parmesan aux herbes de Provence</p>
                 <p class="prix">19€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Œuf poché, caviar d'aubergines à l'asiatique et espuma aux shitakés</p>
-                <p class="prix">16€</p>
+                <p class="nom">Tartelette gourmandes, concassé de butternut, mousse pesto, stracciatella et chutney de figue au vinaigre de Xérès</p>
+                <p class="prix">17€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Tartiflette revisitée</p>
-                <p class="prix">17€</p>
+                <p class="nom">Carpaccio de carrengue marinée au chimichurri, gel hibiscus et perle mangue, émulsion yuzu</p>
+                <p class="prix">18€</p>
             </div>
         </div>
         <div class="plats">
             <h2 class="titre-cat">Plats</h2>
             <div class="carte-item">
-                <p class="nom">Filet de Bœuf flambé et son jus de veau caramélisé au whisky</p>
+                <p class="nom">Filet de Bœuf flambé au cognac et son jus de veau corsé à la truffe</p>
                 <p class="prix">33€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Carré d'agneau en croûte de moutarde à l'ancienne fumé au foin et son jus aux herbes de Provence</p>
-                <p class="prix">42€</p>
+                <p class="nom">Colombo d'agneau, risotto d'orzo aux légumes, gel citron vert</p>
+                <p class="prix">31€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Quasi de veau aux saveurs de l'Italie</p>
+                <p class="nom">Porc Belly, jus de rôti crémé</p>
                 <p class="prix">28€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Filet de légine sauce saté</p>
-                <p class="prix">35€</p>
+                <p class="nom">Filet de thazard mariné, déclinaison de tamarin et citron caviar</p>
+                <p class="prix">29€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Thazard rôti mariné au ponzu, sauce aux agrumes aux notes asiatiques et son crumble de gomazio</p>
-                <p class="prix">29€</p>
+                <p class="nom">Filet de cabillaud, sauce marinière parfumée à la citronnelle et au curry vert</p>
+                <p class="prix">31€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
@@ -56,22 +56,22 @@
         <div class="dessert">
             <h2 class="titre-cat">Desserts</h2>
             <div class="carte-item">
-                <p class="nom">Tout chocolat façon mendiant</p>
+                <p class="nom">Tarte citron meringuée destructurée</p>
                 <p class="prix">12€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Pavlova exotique</p>
+                <p class="nom">Barre gourmande Nutella noisette</p>
                 <p class="prix">12€</p>
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Cheese Cake aux fruits des bois</p>
+                <p class="nom">Entremet banane poire mousse dakatine</p>
                 <p class="prix">12€</p>
             </div>
         </div>
     </div>
-    <p id = "ttc" class="carte-item">Nos prix sont TTC et service compris, hors boissons</p>
+    <p id="ttc" class="carte-item">Nos prix sont TTC et service compris, hors boissons</p>
 </div>
 </template>
 
