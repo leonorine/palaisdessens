@@ -39,7 +39,7 @@
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Filet de thazard mariné, déclinaison de tamarin et citron caviar</p>
+                <p class="nom">Filet de thazard mariné, déclinaison de tamarin et perles de yuzu </p>
                 <p class="prix">29€</p>
             </div>
             <p class="trait">_______________________________</p>
