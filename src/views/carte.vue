@@ -12,7 +12,7 @@
             </div>
             <p class="trait">_______________________________</p>
             <div class="carte-item">
-                <p class="nom">Tartelette gourmandes, concassé de butternut, mousse pesto, stracciatella et chutney de figue au vinaigre de Xérès</p>
+                <p class="nom">Tartelette gourmandes, concassé de butternut, mousse pesto, stracciatella et chutney de figues au vinaigre de Xérès</p>
                 <p class="prix">17€</p>
             </div>
             <p class="trait">_______________________________</p>
