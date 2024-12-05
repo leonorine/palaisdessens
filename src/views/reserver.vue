@@ -431,7 +431,7 @@ function showCustomAlert(message: string | null) {
 function notHolidays(date:HTMLInputElement) {
     
     const dateValue = new Date(`${date.value}T01:00:00`);
-    if (dateValue < new Date('2024-07-30T01:00:00')|| dateValue > new Date('2024-08-11T01:00:00')) {
+    if (dateValue < new Date('2024-12-24T01:00:00')|| dateValue > new Date('2024-12-25T01:00:00')) {
       return true;
     }
     return false;
@@ -470,7 +470,7 @@ export default {
           return;
         }
         else if(notHolidays(resa_date) == false){
-          showCustomAlertRouge("Votre réservation n'a pas été prise en compte, nous sommes fermés du 30 juillet au 12 août inclus.");
+          showCustomAlertRouge("Votre réservation n'a pas été prise en compte, nous sommes fermés le 24 et le 25 décembre inclus.");
           return;
         }
         else if(isBlindDinner(resa_date) == true){
