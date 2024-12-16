@@ -9,7 +9,7 @@
                     <p> Dimanche et Lundi : Fermé</p>
                     <h2>Adresse et Contact</h2>
                     <p>1 bis rue Auguste Babet, 97410 Saint Pierre</p>
-                    <p><a href="tel:+">02 62 01 73 66</a> - <a href="tel:+">06 93 85 93 51</a></p>
+                    <p><a href="tel:+">02 62 01 73 66</a> - <a href="tel:+">06 92 57 81 21</a></p>
                 </div>
             <button id = "contact-active">
                 Contactez-nous
