@@ -4,55 +4,55 @@
         <h1>Notre Carte</h1>
     </div>
     <div class="carte">
-        <div class="entrees">
-            <h2 class="titre-cat">Entrées</h2>
-            <div class="carte-item">
-                <p class="nom">Vitello tonnato, perle olive truffe, brisure tuile de parmesan aux herbes de Provence</p>
-                <p class="prix">19€</p>
-            </div>
-            <p class="trait">_______________________________</p>
-            <div class="carte-item">
-                <p class="nom">Tartelette gourmandes, concassé de butternut, mousse pesto, stracciatella et chutney de figues au vinaigre de Xérès</p>
-                <p class="prix">17€</p>
-            </div>
-            <p class="trait">_______________________________</p>
-            <div class="carte-item">
-                <p class="nom">Carpaccio de carrengue marinée au chimichurri, gel hibiscus et perle mangue, émulsion yuzu</p>
-                <p class="prix">18€</p>
-            </div>
+      <div class="entrees">
+        <h2 class="titre-cat">Entrées</h2>
+        <div class="carte-item">
+          <p class="nom">Vitello Tonnato, perle olive truffée, brisure tuile de parmesan aux herbes de Provence</p>
+          <p class="prix">19€</p>
         </div>
-        <div class="plats">
-            <h2 class="titre-cat">Plats</h2>
-            <div class="carte-item">
-                <p class="nom">Filet de Bœuf flambé au cognac et son jus de veau corsé à la truffe</p>
-                <p class="prix">33€</p>
-            </div>
-            <p class="trait">_______________________________</p>
-            <div class="carte-item">
-                <p class="nom">Colombo d'agneau, risotto d'orzo aux légumes, gel citron vert</p>
-                <p class="prix">31€</p>
-            </div>
-            <p class="trait">_______________________________</p>
-            <div class="carte-item">
-                <p class="nom">Porc Belly, jus de rôti crémé</p>
-                <p class="prix">28€</p>
-            </div>
-            <p class="trait">_______________________________</p>
-            <div class="carte-item">
-                <p class="nom">Filet de thazard mariné, déclinaison de tamarin et perles de yuzu </p>
-                <p class="prix">29€</p>
-            </div>
-            <p class="trait">_______________________________</p>
-            <div class="carte-item">
-                <p class="nom">Filet de cabillaud, sauce marinière parfumée à la citronnelle et au curry vert</p>
-                <p class="prix">31€</p>
-            </div>
-            <p class="trait">_______________________________</p>
-            <div class="carte-item">
-                <p class="nom">L'assiette du potager</p>
-                <p class="prix">22€</p>
-            </div>
+        <p class="trait">_______________________________</p>
+        <div class="carte-item">
+          <p class="nom">Tartelette fraîcheur, tomate séchée, moutarde à l'ancienne, crème Philadelphia et bille de concombre</p>
+          <p class="prix">17€</p>
         </div>
+        <p class="trait">_______________________________</p>
+        <div class="carte-item">
+          <p class="nom">Carpaccio de carangue marinée au chimichurri, gel hibiscus et perle mangue, émulsion yuzu</p>
+          <p class="prix">18€</p>
+        </div>
+      </div>
+      <div class="plats">
+        <h2 class="titre-cat">Plats</h2>
+        <div class="carte-item">
+          <p class="nom">Bœuf en deux textures, sauce bourguignonne truffée</p>
+          <p class="prix">35€</p>
+        </div>
+        <p class="trait">_______________________________</p>
+        <div class="carte-item">
+          <p class="nom">Suprême de volaille farcie façon yassa</p>
+          <p class="prix">27€</p>
+        </div>
+        <p class="trait">_______________________________</p>
+        <div class="carte-item">
+          <p class="nom">Ballottine d'effiloché de porc cuit cinq heures façon ragoût antillais</p>
+          <p class="prix">26€</p>
+        </div>
+        <p class="trait">_______________________________</p>
+        <div class="carte-item">
+          <p class="nom">Entremêlé de légine et gambas, sauce bisque de crustacés, lait de coco et curry rouge</p>
+          <p class="prix">33€</p>
+        </div>
+        <p class="trait">_______________________________</p>
+        <div class="carte-item">
+          <p class="nom">Filet de perroquet rôti, sauce passion et émulsion ananas</p>
+          <p class="prix">27€</p>
+        </div>
+        <p class="trait">_______________________________</p>
+        <div class="carte-item">
+          <p class="nom">L'assiette du potager</p>
+          <p class="prix">22€</p>
+        </div>
+      </div>
         <div class="dessert">
             <h2 class="titre-cat">Desserts</h2>
             <div class="carte-item">
