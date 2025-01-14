@@ -22,7 +22,7 @@
 </div>
 
 <div class="infos-complementaires">
-    <p>© Web Design : Léonorine Tibere <span>・</span> <a href="/mentions-legales">Mentions légales</a></p>
+    <p>© Léonorine Tibere <span>・</span> <a href="/mentions-legales">Mentions légales</a></p>
 </div>
 </template>
 
