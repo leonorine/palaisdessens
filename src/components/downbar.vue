@@ -3,7 +3,7 @@
     <img src="../../public/logoPDS.png" class = "down-logo" alt="Logo">      
 
     <div class="content">
-        <p>Ouvert du Mardi au Samedi : 19:00 - 00:30</p>
+        <p>Ouvert du Mardi au Samedi : 19:00 - 22:00</p>
         <p id = "adresse">1 bis rue Auguste Babet 97410 St Pierre La Réunion <p><a class="telephone" href="tel:">02 62 01 73 66</a> - <a class="telephone" href="tel:">06 92 57 81 21</a></p></p>
         <div class="icone-reseaux">
             <a class = "icone-fb" href="https://www.facebook.com/people/Le-Palais-des-Sens/100090839094288/">

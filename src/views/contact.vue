@@ -5,7 +5,7 @@
                 <div class="header-content">
                     <h1 class="titre">Infos Pratiques</h1>
                     <h2>Nos horaires</h2>
-                    <p> Du Mardi au Samedi : 19h - 00h30</p>
+                    <p> Du Mardi au Samedi : 19h - 22h</p>
                     <p> Dimanche et Lundi : Fermé</p>
                     <h2>Adresse et Contact</h2>
                     <p>1 bis rue Auguste Babet, 97410 Saint Pierre</p>
