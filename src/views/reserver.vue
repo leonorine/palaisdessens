@@ -354,7 +354,7 @@ function showCustomAlert(message: string | null) {
   }
 
   function isBlindDinner(date:HTMLInputElement){
-    if (date.value === '2024-11-20') {
+    if (date.value === '2025-02-26') {
       return true;
     }
     return false;
