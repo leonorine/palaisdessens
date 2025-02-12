@@ -5,7 +5,7 @@
             <div class="header">
                 <div class="header-content">
                 <h1 class="titre">Réserver</h1>
-                <p>Vous pouvez réserver votre table en ligne en remplissant le formulaire ci-dessous. Vous pouvez également réserver par téléphone. <span>Pour les réservations effectuées moins de 24 heures avant la date souhaitée, veuillez nous contacter directement par téléphone : <a href="tel:">02 62 01 73 66</a> - <a href="tel:">06 92 57 81 21</a></span>.</p>
+                <p>Vous pouvez réserver votre table en ligne en remplissant le formulaire ci-dessous. Vous pouvez également réserver par téléphone. <span>Pour les réservations effectuées moins de 24 heures avant la date souhaitée, veuillez nous contacter directement par téléphone : <a href="tel:">02 62 01 73 66</a> - <a href="tel:">06 92 57 81 21</a></span>. Nous sommes complets le 14 et le 15 février 2025.</p>
                 </div>
             </div>
             <div class="formulaire">
@@ -428,6 +428,14 @@ function showCustomAlert(message: string | null) {
     return true;
 }
 
+function isComplet(date:HTMLInputElement){
+  const dateValue = new Date(`${date.value}T01:00:00`);
+    if (dateValue == new Date('2025-02-15T01:00:00')|| dateValue == new Date('2025-02-14T01:00:00')) {
+      return true;
+    }
+    return false;
+  
+}
 function notHolidays(date:HTMLInputElement) {
     
     const dateValue = new Date(`${date.value}T01:00:00`);
@@ -469,7 +477,7 @@ export default {
           showCustomAlertRouge("Votre réservation n'a pas été prise en compte, nous sommes fermés les dimanches et les lundis.");
           return;
         }
-        else if(notHolidays(resa_date) == false){
+        else if(notHolidays(resa_date) == false) {
           showCustomAlertRouge("Votre réservation n'a pas été prise en compte, nous sommes fermés le 24 et le 25 décembre inclus.");
           return;
         }
@@ -480,7 +488,7 @@ export default {
           }
         
         else{
-           emailjs.send('service_mexo8rc', 'template_sx0cvhs', {
+          emailjs.send('service_mexo8rc', 'template_sx0cvhs', {
             resa_name: resa_name.value,
             resa_email: resa_email.value,
             resa_tel: resa_tel.value,
@@ -488,7 +496,7 @@ export default {
             resa_date: resa_date.value.split('-').reverse().join('-'),
             resa_heure: resa_heure.value,
             resa_message: resa_message.value
-          }, 'Y9263P4yw98HtXCnm'); 
+          }, 'Y9263P4yw98HtXCnm');
           showCustomAlert("Votre réservation a bien été prise en compte, nous vous recontacterons rapidement pour confirmer votre réservation.");
       
         }
