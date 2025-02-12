@@ -429,8 +429,7 @@ function showCustomAlert(message: string | null) {
 }
 
 function isComplet(date:HTMLInputElement){
-  const dateValue = new Date(`${date.value}T01:00:00`);
-    if (dateValue == new Date('2025-02-15T01:00:00')|| dateValue == new Date('2025-02-14T01:00:00')) {
+    if (date.value == '2025-02-14'  || date.value == '2025-02-15') {
       return true;
     }
     return false;
@@ -479,6 +478,10 @@ export default {
         }
         else if(notHolidays(resa_date) == false) {
           showCustomAlertRouge("Votre réservation n'a pas été prise en compte, nous sommes fermés le 24 et le 25 décembre inclus.");
+          return;
+        }
+        else if(isComplet(resa_date) == true){
+          showCustomAlertRouge("Votre réservation n'a pas été prise en compte, nous sommes complets le 14 et le 15 février 2025.");
           return;
         }
         else if(isBlindDinner(resa_date) == true){
@@ -539,6 +542,10 @@ export default {
           showCustomAlertRouge("Votre réservation n'a pas été prise en compte, nous sommes fermés du 30 juillet au 12 août inclus.");
           return;
         }
+        else if(isComplet(resa_date)){
+          showCustomAlertRouge("Votre réservation n'a pas été prise en compte, nous sommes complets le 14 et le 15 février 2025.");
+          return;
+        }
         
         else{
            emailjs.send('service_mexo8rc', 'template_sx0cvhs', {
@@ -549,7 +556,7 @@ export default {
             resa_date: resa_date.value.split('-').reverse().join('-'),
             resa_heure: resa_heure.value,
             resa_message: resa_message.value
-          }, 'Y9263P4yw98HtXCnm'); 
+          }, 'Y9263P4yw98HtXCnm');
           showCustomAlert("Votre réservation a bien été prise en compte, nous vous recontacterons rapidement pour confirmer votre réservation.");
       
         }
