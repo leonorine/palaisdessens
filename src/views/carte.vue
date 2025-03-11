@@ -57,7 +57,7 @@
     <div class="dessert">
       <h2 class="titre-cat">Desserts</h2>
       <div class="carte-item">
-        <p class="nom">Tarte passion meringuée et déclinaison de passion</p>
+        <p class="nom">Tarte passion meringuée destructurée et déclinaison de passion</p>
         <p class="prix">12€</p>
       </div>
       <p class="trait">_______________________________</p>
