@@ -7,18 +7,18 @@
     <div class="entrees">
       <h2 class="titre-cat">Entrées</h2>
       <div class="carte-item">
-        <p class="nom">Tartare de thon banane mariné au sera, condiments tamarin et letchi, émulsion citron</p>
+        <p class="nom">Betterave confite à la grenadine, pommade de chèvre miel, crumble aux noix et coulis de betterave</p>
+        <p class="prix">16€</p>
+      </div>
+      <p class="trait">_______________________________</p>
+      <div class="carte-item">
+        <p class="nom">Maquereau mariné au soja, miso et miel, condiment pomme, framboise, échalotes confites et menthe</p>
         <p class="prix">18€</p>
       </div>
       <p class="trait">_______________________________</p>
       <div class="carte-item">
-        <p class="nom">Foie gras de canard mi-cuit parfumé au rhum vieux, vanille, grué cacao et café, chutney d'oignon caramélisé et brioche toastée</p>
-        <p class="prix">19€</p>
-      </div>
-      <p class="trait">_______________________________</p>
-      <div class="carte-item">
-        <p class="nom">Haricot blanc en persillade éclat de noisettes torréfiées, Philadelphia, espuma de chou-fleur et huile noisette</p>
-        <p class="prix">15€</p>
+        <p class="nom">Salade César revisitée (espuma de sauce César, sucrine, gel de bouillon de poulet parfumé aux herbes et crumble parmesan)</p>
+        <p class="prix">17€</p>
       </div>
     </div>
 
@@ -30,22 +30,22 @@
       </div>
       <p class="trait">_______________________________</p>
       <div class="carte-item">
-        <p class="nom">Poitrine de porc confite au miel et gingembre, jus de rôti crémé, condiment tomaté façon barbecue et épices du trappeur</p>
-        <p class="prix">27€</p>
-      </div>
-      <p class="trait">_______________________________</p>
-      <div class="carte-item">
-        <p class="nom">Ballottine de poulet jaune fermier farci aux champignons et sauce forestière</p>
-        <p class="prix">26€</p>
-      </div>
-      <p class="trait">_______________________________</p>
-      <div class="carte-item">
-        <p class="nom">Pavé de bourgeois rôti, duo de sauces beurre blanc encre de seiche et crème wasabi yuzu</p>
+        <p class="nom">Magret de canard rôti, duo de sauce au poivre et sauce vin jaune</p>
         <p class="prix">28€</p>
       </div>
       <p class="trait">_______________________________</p>
       <div class="carte-item">
-        <p class="nom">Filet de capitaine poêlé sauce blaff et gel bissap</p>
+        <p class="nom">Raviole d'agneau façon tajine</p>
+        <p class="prix">27€</p>
+      </div>
+      <p class="trait">_______________________________</p>
+      <div class="carte-item">
+        <p class="nom">Filet de merlu poêlé sauce beurre blanc au champagne, œufs de saumon et herbe fine</p>
+        <p class="prix">28€</p>
+      </div>
+      <p class="trait">_______________________________</p>
+      <div class="carte-item">
+        <p class="nom">Bourride provençale (mix de poisson du moment mariné) poêlé de pommes de terre et aïoli</p>
         <p class="prix">27€</p>
       </div>
       <p class="trait">_______________________________</p>
