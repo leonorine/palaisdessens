@@ -5,7 +5,7 @@
             <div class="header">
                 <div class="header-content">
                 <h1 class="titre">Réserver</h1>
-                <p>Vous pouvez réserver votre table en ligne en remplissant le formulaire ci-dessous. Vous pouvez également réserver par téléphone. <span>Pour les réservations effectuées moins de 24 heures avant la date souhaitée, veuillez nous contacter directement par téléphone : <a href="tel:">02 62 01 73 66</a> - <a href="tel:">06 92 57 81 21</a></span>. Nous sommes complets le 14 et le 15 février 2025.</p>
+                <p>Vous pouvez réserver votre table en ligne en remplissant le formulaire ci-dessous. Vous pouvez également réserver par téléphone. <span>Pour les réservations effectuées moins de 24 heures avant la date souhaitée, veuillez nous contacter directement par téléphone : <a href="tel:">02 62 01 73 66</a> - <a href="tel:">06 92 57 81 21</a></span>.</p>
                 </div>
             </div>
             <div class="formulaire">
