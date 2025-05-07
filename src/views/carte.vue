@@ -57,17 +57,17 @@
     <div class="dessert">
       <h2 class="titre-cat">Desserts</h2>
       <div class="carte-item">
-        <p class="nom">Tarte passion meringuée déstructurée et déclinaison de passion</p>
+        <p class="nom">Entremet fraise crème brûlée</p>
         <p class="prix">12€</p>
       </div>
       <p class="trait">_______________________________</p>
       <div class="carte-item">
-        <p class="nom">Entremet pecan, vanille et caramel beurre salé</p>
+        <p class="nom">Riz au lait coco et vanille, ganache chocolat blanc vanille matcha et nougatine sésame et riz soufflé</p>
         <p class="prix">12€</p>
       </div>
       <p class="trait">_______________________________</p>
       <div class="carte-item">
-        <p class="nom">Mousse chocolat, poire William pochée au caramel, gel poire et crumble amande</p>
+        <p class="nom">Duo de mousse chocolat et crème diplomate à la vanille et crumble</p>
         <p class="prix">12€</p>
       </div>
     </div>
