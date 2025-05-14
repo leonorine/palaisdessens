@@ -25,7 +25,7 @@
     <div class="plats">
       <h2 class="titre-cat">Plats</h2>
       <div class="carte-item">
-        <p class="nom">Filet de bœuf fumé, laqué à la mélasse de canne et flambé au rhum vieux, jus de viande corsé parfumé au jus de canne, herbes de Provence et poivre de Madagascar</p>
+        <p class="nom">Filet de bœuf fumé, laqué à la mélasse de canne et flambé au rhum vieux, jus de bœuf corsé parfumé au jus de canne, herbes de Provence et poivre de Madagascar</p>
         <p class="prix">31€</p>
       </div>
       <p class="trait">_______________________________</p>
